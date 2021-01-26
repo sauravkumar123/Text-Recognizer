@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:elevation="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:id="@+id/imageview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageview"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button"
+        android:text="Recognize" />
+
+    <EditText
+        android:id="@+id/myedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="30dp"
+        android:background="#FFFF00"
+        android:fontFamily="@font/concert_one"
+        android:lineSpacingExtra="10dp"
+        android:padding="30dp"
+        android:textStyle="italic"
+       android:hint="Image Text Will be Show Here(Editable)"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
